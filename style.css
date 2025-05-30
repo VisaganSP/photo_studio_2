@@ -24,12 +24,12 @@
     SKELETON
 -------------------------------------------------------------------*/
 .logo{
-    height:70px;
+    /* height:30px; */
     width:250px;
 }
 @media only screen and (max-width:700px){
     .logo{
-        height:50px;
+        /* height:50px; */
         width:150px;
     } 
 }
@@ -37,7 +37,7 @@ body {
     color: #999999;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
-    line-height: 1.80857;
+    /* line-height: 1.80857; */
     
 }
 
@@ -402,14 +402,11 @@ a img.aligncenter {
     SECTIONS
 -------------------------------------------------------------------*/
 
-.main-banner{
-	height: 100%;
-	position: relative;
-}
+
 @media only screen and (max-width:700px){
     .main-banner{
         background-size:0px 800px ;
-        position: relative;
+        /* position: relative; */
     }
 }
 
@@ -417,6 +414,9 @@ a img.aligncenter {
 	display: table;
     width: 100%;
 	text-align: center;
+    /* height: 100%; */
+	position: relative;
+  
 }
 .main-banner::after {
     content: " ";
@@ -431,10 +431,13 @@ a img.aligncenter {
 }
 .heading{
 	color: #fff;
-	display: table-cell;
-	vertical-align: middle;
+	display:block;
+	/* vertical-align: text-top; */
+
 	position: relative;
+    top:160px;
 	z-index: 1;
+    padding: 10px;
 }
 .heading h1{
 	color: #ffffff;
@@ -1043,11 +1046,11 @@ xclip
     transform: translateX(-50%);
 }
 .pricingTable .price-value{
-    width: 130px;
+    width: max-content;
     height: 150px;
     background: #fff;
     color: #8299cd;
-    padding: 20px 0;
+    padding: 20px 10px;
     border: 1px solid #8299cd;
     box-shadow: 0 0 0 5px #fff,0 0 25px -2px  #000;
     z-index: 1;
